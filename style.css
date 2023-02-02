@@ -68,3 +68,14 @@ margin:0 10px 0 10px;
      box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75),-2px -35px 32px -8px rgba(0, 0, 0, 0.75);
 
 }
+@media(600px>=width){
+  img{
+    width:40vw;
+  }
+  .character{
+  height:60vw;
+}
+  .main_div{
+    gap:10px;
+  }
+}

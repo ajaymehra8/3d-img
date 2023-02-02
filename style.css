@@ -24,10 +24,12 @@ body{
 }
 .card{
   position:relative;
-  transition:all .2s;
-}
+  transition:all .4s;
+ 
+  }
 img{
   width:23vw;
+ 
 }
 .absolute{
  position:absolute;
@@ -36,11 +38,11 @@ img{
 .character-div{
   top:-3vw;
 opacity:0;
+
+  width:0;
   transition:all 0.5s;
 }
-.character{
-  height:40vw;
-}
+
 .name{
 bottom:.3vw;
 margin:0 10px 0 10px;
@@ -60,9 +62,15 @@ margin:0 10px 0 10px;
 .card:hover .name{
   bottom:1vw;
 }
+.card:hover .character{
+  transition:height .7s;
+  height:40vw;
+  width:28vw;
+}
 
 .card:hover{
    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  cursor:pointer;
 /*   box-shadow: 0 120px 120px 120px inset,10px 120px 120px 100px inset black; */
   
      box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75),-2px -35px 32px -8px rgba(0, 0, 0, 0.75);
